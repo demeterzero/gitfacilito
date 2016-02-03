@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>segunda practica</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"> 
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+<style>
+/* escritorio */
+  @media(min-width:1200px){
+    body{
+     color:red;
+    }
+  }
+  /* escritorio pequeño */
+  @media(min-width:768px) and (max-width:979px){
+    body{
+       color:green;
+    }
+  }
+  /* tablet o smarthphone */
+  @media(max-width:767px){
+    body{
+       color:blue;
+    }
+  }
+  /*smarthphone*/
+  @media(max-width:480px){
+    body{
+     color:yellow;
+    }
+  }
+  .text-big
+  {
+	font-size:300px;
+	line-height:320px;
+  }
+</style>
+</head>
+<div class="container">
+	<br>
+	<br>
+	<div class="row fluid">
+		<div class="span12">
+		&nbsp;
+		</div>
+	</div>
+		<div class="row-fluid">
+		<div class="span12">
+			<a href="#" class="btn mypop">this is popover</a>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<a href="#"  title="hola soy un tooltip">this is a test</a><br>
+			<a href="#"  title="hola soy un tooltip">this is a test</a><br>
+			<a href="#"  title="hola soy un tooltip">this is a test</a><br>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>radio button & check box</h1>
+			</div>
+			<div class="btn-group" data-toggle="buttons-checkbox">
+				<button  type="button"class="btn btn-primary">ejemplo</button>
+				<button  type="button"class="btn btn-primary">ejemplo</button>
+				<button  type="button"class="btn btn-primary">ejemplo</button>
+			</div>
+			<div class="btn-group" data-toggle="buttons-radio">
+				<button  type="button"class="btn btn-primary">ejemplo</button>
+				<button  type="button"class="btn btn-primary">ejemplo</button>
+				<button  type="button"class="btn btn-primary">ejemplo</button>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class span12>
+			<div class="page-header">
+				<h1>Accordeon</h1>
+			</div>
+			<div class="accordion" id="main">
+				<div class="accordion-group">
+					<div class="accordion-heading">					
+						<a href="#comp1" class="accordion-toggle" data-toggle="collapse" data-parent="#main">this is a test</a>
+					</div>
+					<div id="comp1" class="accordion-body collapse">
+						<div class="accordion-inner">
+							lorem ipsum dolor sit amet
+						</div>
+					</diV>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">		
+						<a href="#comp2" class="accordion-toggle" data-toggle="collapse" data-parent="#main">this is a test</a>					
+					</div>
+					<div id="comp2"class="accordion-body collapse">
+						<div class="accordion-inner">
+							lorem ipsum dolor sit amet
+						</div>
+					</diV>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">					
+						<a href="#comp3" class="accordion-toggle" data-toggle="collapse" data-parent="#main">this is a test</a>
+					</div>
+					<div id="comp3" class="accordion-body collapse">
+						<div class="accordion-inner">
+							lorem ipsum dolor sit amet
+						</div>
+					</diV>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1> tabs</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">home</a></li>
+				<li><a data-toggle="tab" href="#about">about</a></li>
+				<li><a data-toggle="tab" href="#contact">contact</a></li>
+				<li><a data-toggle="tab" href="#profile">profile</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="home"class="tab-pane active">
+					<h1>home</h1>
+					ejemplo
+				</div>
+				<div id="about"class="tab-pane">
+					<h1>about</h1>
+					ejemplo
+				</div>
+				<div id="contact"class="tab-pane">
+					<h1>contact</h1>
+					ejemplo
+				</div>
+				<div id="profile" class="tab-pane">
+					<h1>profile</h1>
+					ejemplo
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1> uso del MODAL</h1>
+			</div>
+			<div  id="myModal"class="modal hide fade">
+				<div class="modal-header">
+					<button type="button"class="close" data-dismiss="modal"> x </button>
+					<h3>esto es un titulo de la modal</h3>
+				</div>
+				<div class="modal-body">
+					body
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn pull-right">x</button>
+					&nbsp;
+					<button type="button" data-dismiss="modal" class="btn btn-primary pull-right">send</button>
+				</div>
+			</div>
+			<a href="ajax.html" data-target="#myModal" data-toggle="modal" class="btn">Modal</a>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>Labels and bagdes</h1>
+			</div>
+			<span class="label">ejemplo</span>
+			<span class="label label-important">ejemplo</span>
+			<span class="label label-info">ejemplo</span>
+			<span class="label label-warning">ejemplo</span>
+			<span class="label label-success">ejemplo</span>
+			<span class="label label-inverse">ejemplo</span>
+			<hr>
+			<span class="badge">1</span>
+			<span class="badge badge-important">2</span>
+			<span class="badge badge-info">3</span>
+			<span class="badge badge-warning">4</span>
+			<span class="badge badge-success">5</span>
+			<span class="badge badge-inverse">6</span>
+		</div>
+	</div>
+		<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>Listado</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span4">
+			<div class="media">
+				<a href="#"class="pull-left">
+				<img style= "width:80px;"src="img/03.jpg" alt="" class="media-object"></a>
+					<div class="media-body">
+						<h4 class="media-heading">
+							this is a title
+						</h4>
+						<p>this is a test of media</p>
+						<p>this is a test of media</p>
+					</div>
+			</div>
+			<div class="media">
+				<a href="#"class="pull-left">
+				<img style= "width:80px;"src="img/03.jpg" alt="" class="media-object"></a>
+					<div class="media-body">
+						<h4 class="media-heading">
+							this is a title
+						</h4>
+						<p>this is a test of media</p>
+						<p>this is a test of media</p>
+					</div>
+			</div>
+			<div class="media">
+				<a href="#"class="pull-left">
+				<img style= "width:80px;"src="img/03.jpg" alt="" class="media-object"></a>
+					<div class="media-body">
+						<h4 class="media-heading">
+							this is a title
+						</h4>
+						<p>this is a test of media</p>
+						<p>this is a test of media</p>
+					</div>
+			</div>
+			<div class="media">
+				<a href="#"class="pull-left">
+				<img style= "width:80px;"src="img/03.jpg" alt="" class="media-object"></a>
+					<div class="media-body">
+						<h4 class="media-heading">
+							this is a title
+						</h4>
+						<p>this is a test of media</p>
+						<p>this is a test of media</p>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="page-header">
+			<h1>utilidades generales</h1>
+		</div>
+		<div class="span3">
+			<p class="text-right text-error"> lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p class="text-left text-warning"> lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p class="text-center text-info"> lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p class="muted "> lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p class="text-success "> lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="span3">
+			<h1>this is test <small> This is another test</small></h1>
+		</div>
+		<div class="span3">
+			<div class="well">
+				<p>this is a test</p>
+			</div>
+			<div class="well well-large">
+				<p>this is a test</p>
+			</div>
+			<div class="well well-small">
+				<p>this is a test</p>
+			</div>
+		</div>
+		<div class="span3">
+			<div style="border:2px dotted #000" class="clearfix">
+				<div class="well pull-right">A</div>
+				<div class="well pull-left">B</div>
+			</div>
+			<ul class="inline">
+				<li><a href="#">this is a test</a></li>
+				<li><a href="#">this is a test</a></li>
+				<li><a href="#">this is a test</a></li>
+				<li><a href="#">this is a test</a></li>
+				<li><a href="#">this is a test</a></li>
+			</ul>
+			<div class="well">
+				lorem ipsum dolor sit amet, consectetur adipiscing elit, magni provident alias 
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>barras de progreso</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span4">
+			<div class="progress progress-striped active">
+				<div class="bar" style="width:70%"></div>
+			</div>
+		</div>
+		<div class="span4">
+			<div class="progress progress-info active">
+				<div class="bar" style="width:60%"></div>
+			</div>
+			<div class="progress progress-warning active">
+				<div class="bar" style="width:50%"></div>
+			</div>
+			<div class="progress progress-danger active">
+				<div class="bar" style="width:70%"></div>
+			</div>
+			<div class="progress progress-success active">
+				<div class="bar" style="width:80%"></div>
+			</div>
+		</div>
+		<div class="span4">
+		</div>
+	</div>
+	
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>Alerts</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span3">
+			<div class="alert">
+				<button type="button" class="close" data-dismiss="alert" >&times;</button>
+				<h4>Alert!!</h4>
+				this is a test
+			</div>
+		</div>
+		<div class="span3">
+			<div class="alert alert-successs">
+				<h4>Success!</h4>
+				this is a test
+			</div>
+		</div>
+		<div class="span3">
+			<div class="alert alert-info">
+				<h4>Info!</h4>
+				this is a test
+			</div>
+		</div>
+		<div class="span3">
+			<div class="alert alert-error">
+				<h4>Error!</h4>
+				this is a test
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>Thumbnails</h1>
+			</div>
+			<ul class="thumbnails">
+				<li class="span2"><a href="#" class="thumbnail"><img src="img/01.jpg"></a></li>
+				<li class="span2"><a href="#" class="thumbnail"><img src="img/01.jpg"></a></li>
+				<li class="span2"><a href="#" class="thumbnail"><img src="img/01.jpg"></a></li>
+				<li class="span2"><a href="#" class="thumbnail"><img src="img/01.jpg"></a></li>
+				<li class="span2"><a href="#" class="thumbnail"><img src="img/01.jpg"></a></li>
+				<li class="span2"><a href="#" class="thumbnail"><img src="img/01.jpg"></a></li>
+			</ul>
+		</div>
+		<hr>
+		<ul class="thumbnails">
+			<li class="span4">
+				<div class="thumbnail">
+					<img src="img/02.jpg" alt="">
+					<div class="caption">
+						<h3>Item1</h3>
+						<p>this is a test</p>
+						<p> and this one is another test</p>
+					</div>
+				</div>
+			</li>
+			<li class="span4">
+				<div class="thumbnail">
+					<img src="img/02.jpg" alt="">
+					<div class="caption">
+						<h3>Item2</h3>
+						<p>this is a test</p>
+						<p> and this one is another test</p>
+					</div>
+				</div>
+			</li>
+			<li class="span4">
+				<div class="thumbnail">
+					<img src="img/02.jpg" alt="">
+					<div class="caption">
+						<h3>Item3</h3>
+						<p>this is a test</p>
+						<p> and this one is another test</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>Listas</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span4">
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#">Test 1</a></li>
+				<li><a href="#">Test 2</a></li>
+				<li><a href="#">Test 3</a></li>
+				<li class="disabled"><a href="#">Test 4</a></li>
+			</ul>
+			<hr>
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#">Test 1</a></li>
+				<li><a href="#">Test 2</a></li>
+				<li><a href="#">Test 3</a></li>
+				<li class="disabled"><a href="#">Test 4</a></li>
+			</ul>
+			<hr>
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#">Test 1</a></li>
+				<li><a href="#">Test 2</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Test 3
+					<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">@codigofacilito</a></li>
+							<li><a href="#">@codigofacilito</a></li>
+							<li><a href="#">@codigofacilito</a></li>
+							<li><a href="#">@codigofacilito</a></li>
+						</ul>
+				</li>
+				<li class="disabled"><a href="#">Test 4</a></li>
+			</ul>
+		</div>
+		<div class="span4">
+			<ul class="nav nav-list well">
+				<li><a href="#"><i class="icon-file"></i>codigofacilito</a></li>
+				<li class="nav-header">codigofacilito</li>
+				<li class="active"><a href="#"><class="icon-user"></i>codigofacilito</a></li>
+				<li><a href="#"><i class="icon-ok"></i>codigofacilito</a></li>
+				<li><a href="#"><i class="icon-pencil"></i>codigofacilito</a></li>
+				<li class="divider"></li>
+				<li><a href="#"><i class="icon-time"></i>codigofacilito</a></li>
+			</ul>
+		</div>
+		<div class="span4">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#">Test 1</a></li>
+					<li><a href="#">Test 2</a></li>
+					<li><a href="#">Test 3</a></li>
+					<li class="disabled"><a href="#">Test 4</a></li>
+				</ul>
+			<hr>
+				<ul class="nav nav-tabs nav-stacked">
+					<li class="active"><a href="#">Test 1</a></li>
+					<li><a href="#">Test 2</a></li>
+					<li><a href="#">Test 3</a></li>
+					<li class="disabled"><a href="#">Test 4</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="navbar navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+							<a href="#" class="brand">ejemplo</a>
+							<ul class="nav pull-right">
+								<li><a href="#">HOME</a></li>
+								<li class="active"><a href="#">CONTACTO</a></li>
+								<li><a href="#">BLOG</a></li>
+								<li class="divider-vertical"></li>
+								<li><a href="#">ABOUT</a></li>
+							</ul>
+						<form action="#" class="navbar-search pull-right">
+							<input type="text" class="search-query" placeholder="buscar">
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>Menus</h1>
+			</div>
+			<div class="navbar navbar-inverse">
+				<div class="navbar-inner">
+					<div class="container">
+							<a href="#" class="brand">ejemplo</a>
+							<ul class="nav pull-right">
+								<li><a href="#">HOME</a></li>
+								<li class="active"><a href="#">CONTACTO</a></li>
+								<li><a href="#">BLOG</a></li>
+								<li class="divider-vertical"></li>
+								<li><a href="#">ABOUT</a></li>
+							</ul>
+						<form action="#" class="navbar-search pull-right">
+							<input type="text" class="search-query" placeholder="buscar">
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>Breadcrumbs</h1>
+			</div>
+			<ul class="breadcrumb">
+				<li><a href="#">Home</a><span class="divider">/</span></li>
+				<li><a href="#">Users</a><span class="divider">/</span></li>
+				<li class="active">Admin</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1> imagenes</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row fluid">
+		<div class="span4">
+			<img src="img/01.jpg" alt="curso" class="img-rounded">
+		</div>
+		<div class="span4">
+			<img src="img/02.jpg" alt="curso" class="img-circle">
+		</div>
+		<div class="span4">
+			<img src="img/03.jpg" alt="curso" class="img-polaroid">
+		</div>
+	</div>
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span12">
+				&nbsp;
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="page-header">
+					<h1>Pagination</p>
+				</div>
+				<div class="pager">
+					<ul>
+						<li class="disabled previous"><a href="#">first</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li class="next"><a href="#">last</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div class="pagination pagination-large pagination-centered">
+					<ul>
+						<li class="disabled"><a href="#">&larr;first</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">last&rarr;</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div class="pagination pagination-right">
+					<ul>
+						<li class="disabled"><a href="#">first</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">last</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div class="pagination pagination-small">
+					<ul>
+						<li class="disabled"><a href="#">first</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">last</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div class="pagination pagination-mini">
+					<ul>
+						<li class="disabled"><a href="#">first</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">last</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="page-header">
+			<h1>Iconos</h1>
+		</div>
+		<div class="span4">
+			<i class="icon-user"></i>
+			<i class="icon-pencil"></i>
+			<i class="icon-file"></i>
+			<i class="icon-ok"></i>
+		</div>
+		<div class="span4">
+			<a href=" " class="btn"> 
+				<i class="icon-user"></i>
+			register
+			</a>
+		</div>
+		<div class="span4">
+			<div class="input-prepend">
+				<input type="text">
+				<span class="add-on"><i class="icon-map-marker"></i></span>
+			</div>
+			<br>
+			<div class="input-append">
+				<span class="add-on"><i class="icon-time"></i></span>
+				<input type="text">
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1> iconos vectoriales</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<i class="icon-star text-big"></i>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1> grupo de botones</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div class="btn-group">
+		<a href="" class="btn">Izq</a>
+		<a href="" class="btn">centro</a>
+		<a href="" class="btn">Derecha</a>
+	</div>
+	<div class="btn-toolbar">
+		<div class="btn-group">
+			<a href="" class="btn">Izq</a>
+			<a href="" class="btn">centro</a>
+			<a href="" class="btn">Derecha</a>
+		</div>
+		<div class="btn-group">
+			<a href="" class="btn">1</a>
+			<a href="" class="btn">2</a>
+			<a href="" class="btn">3</a>
+		</div>
+	</div>
+	<div class="btn-group">
+		<a href="#" class="btn dropdown-toggle btn-primary" data-toggle="dropdown">Desplegable
+		<span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="">this is a test</a>
+			</li>
+			<li>
+				<a href="">this is a test</a>
+			</li>
+			<li>
+				<a href="">this is a test</a>
+			</li>
+			<li>
+				<a href="">this is a test</a>
+			</li>
+		</ul>
+	</div>
+	<div class="btn-group btn-group-vertical">
+			<a href="" class="btn">1</a>
+			<a href="" class="btn">2</a>
+			<a href="" class="btn">3</a>
+	</div>
+	<hr>
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="span4">
+				<div class="well hidden-desktop">
+					<h1 class="text-center">Desktop</h1>
+				</div>
+			</div>
+			<div class="span4">
+				<div class="well hidden-tablet">
+					<h1 class="text-center">Tablet</h1>
+				</div>
+			</div>
+			<div class="span4">
+				<div class="well hidden-phone">
+					<h1 class="text-center">Phone</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row fluid">
+		<div class="span12">
+			<table class="table table-bordered table-striped table-hover table-condensed">
+				<tr>
+					<td>Campos</td>
+					<td>Campos</td>
+					<td>Campos</td>
+					<td>Campos</td>
+				</tr>
+				<tr>
+					<td>Campos</td>
+					<td>Campos</td>
+					<td>Campos</td>
+					<td>Campos</td>
+				</tr>
+				<tr>
+					<td>Campos</td>
+					<td>Campos</td>
+					<td>Campos</td>
+					<td>Campos</td>
+				</tr>
+				<tr>
+					<td>Campos</td>
+					<td>Campos</td>
+					<td>Campos</td>
+					<td>Campos</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="row fluid">
+		<div class="span6">
+			<form action="">
+				<legend>Datos personales</legend>
+				<label for="">Name</label>
+				<input type="text">
+				<legend>Datos de facturacion</legend>
+				<label for="">Name</label>
+				<input type="text">
+				<label for="">Name</label>
+				<input type="text">
+				<br>
+				<input type="submit" class="btn">
+			</form>
+		</div>
+		<div class="span6">
+			<form action="">
+				<input type="text" class="search-query">
+				<hr>
+				<form actiuon="" class="form- inline">
+					<input type="text">
+					<input type="submit" class="btn">
+				</form>
+				<hr>
+				<form action="">
+					<div class="input-prepend">
+						<span class="add-on">@</span>
+						<input type="text">
+					</div>
+					<div class="input-append">
+						<input type="text">
+						<span class="add-on">@</span>
+					</div>
+					<div class="input-append input-prepend">
+						<span class="add-on">$</span>
+						<input type="text">
+						<span class="add-on">.00</span>
+					</div>
+					<div class="input-append">
+						<input type="text">
+						<input type="submit" class="btn">
+					</div>
+				</form>
+			</form>
+		</div>
+	</div>
+	<div class="row fluid">
+		<div class="span4">
+			<a href="" class="btn">link</a>
+			<input type="submit" value="submit" class="btn">
+			<input type="button" value="button" class="btn">
+			<button class="btn"> tag</button>
+			<hr>
+			<a href="" class="btn btn-link">link</a>
+			<input type="submit" value="submit" class="btn btn-link">
+			<input type="button" value="button" class="btn btn-link">
+			<button class="btn btn-link"> tag</button>
+			<hr>
+			<a href="" class="btn btn-block btn-primary btn-large">link</a>
+			<input type="submit" value="submit" class="btn btn-block">
+			<input type="button" value="button" class="btn btn-block">
+			<button class="btn btn-block"> tag</button>
+		</div>
+		<div class="span4">
+			<a href="" class="btn btn-primary">link</a>
+			<input type="submit" value="submit" class="btn btn-primary">
+			<input type="button" value="button" class="btn btn-primary">
+			<button class="btn btn-primary"> tag</button>
+			<hr>
+			<a href="" class="btn btn-success">link</a>
+			<input type="submit" value="submit" class="btn btn-success">
+			<input type="button" value="button" class="btn btn-success">
+			<button class="btn btn-success"> tag</button>
+			<hr>
+			<a href="" class="btn btn-warning">link</a>
+			<input type="submit" value="submit" class="btn btn-warning">
+			<input type="button" value="button" class="btn btn-warning">
+			<button class="btn btn-warning"> tag</button>
+			<hr>
+			<a href="" class="btn btn-info">link</a>
+			<input type="submit" value="submit" class="btn btn-info">
+			<input type="button" value="button" class="btn btn-info">
+			<button class="btn btn-info"> tag</button>
+			<hr>
+			<a href="" class="btn btn-danger">link</a>
+			<input type="submit" value="submit" class="btn btn-danger">
+			<input type="button" value="button" class="btn btn-danger">
+			<button class="btn btn-danger"> tag</button>
+			<hr>
+			<a href="" class="btn btn-inverse">link</a>
+			<input type="submit" value="submit" class="btn btn-inverse">
+			<input type="button" value="button" class="btn btn-inverse">
+			<button class="btn btn-inverse"> tag</button>
+		</div>
+		<div class="span4">
+			<a href="" class="btn btn-large">link</a>
+			<input type="submit" value="submit" class="btn btn-large">
+			<input type="button" value="button" class="btn btn-large">
+			<button class="btn btn-large"> tag</button>
+			<hr>
+			<a href="" class="btn">link</a>
+			<input type="submit" value="submit" class="btn">
+			<input type="button" value="button" class="btn">
+			<button class="btn"> tag</button>
+			<hr>
+			<a href="" class="btn btn-small">link</a>
+			<input type="submit" value="submit" class="btn btn-small">
+			<input type="button" value="button" class="btn btn-small">
+			<button class="btn btn-small"> tag</button>
+			<hr>
+			<a href="" class="btn btn-mini">link</a>
+			<input type="submit" value="submit" class="btn btn-mini">
+			<input type="button" value="button" class="btn btn-mini">
+			<button class="btn btn-mini"> tag</button>
+		</div>
+	</div>
+  <div class="row">
+      <div class="span12">
+    <h1>This is test</h1>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum egestas condimentum. Pellentesque ultricies ante id ex facilisis, et congue justo facilisis. Morbi maximus euismod maximus. Donec mattis, sapien quis imperdiet iaculis, felis ipsum semper lectus, eu sagittis dui tellus ut enim. Nunc aliquam lacus in rutrum varius. Maecenas at interdum quam. Sed sagittis ante sem, in iaculis leo molestie eu. Etiam non porta libero. Curabitur neque ipsum, venenatis vitae fringilla eu, gravida ut dui. In et magna id magna pulvinar rhoncus ut pharetra nulla. Vestibulum ut augue eu erat convallis accumsan. Morbi lacinia, enim vitae ultrices vestibulum, augue ipsum rutrum tellus, ac malesuada justo quam eget mi.
+  </p>
+    </div>
+    <div class="row">
+      <div class="span6">
+            <h1>This is other test</h1>
+            <p>
+            orem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum egestas condimentum. Pellentesque ultricies ante id ex facilisis, et congue justo facilisis. Morbi maximus euismod maximus. Donec mattis, sapien quis imperdiet iaculis, felis ipsum semper lectus, eu sagittis dui tellus ut enim. Nunc aliquam lacus in rutrum varius. Maecenas at interdum quam. Sed sagittis ante sem, in iaculis leo molestie eu. Etiam non porta libero. Curabitur neque ipsum, venenatis vitae fringilla eu, gravida ut dui. In et magna id magna pulvinar rhoncus ut pharetra nulla. Vestibulum ut augue eu erat convallis accumsan. Morbi lacinia, enim vitae ultrices vestibulum, augue ipsum rutrum tellus, ac malesuada justo quam eget mi.</div>
+          </p>
+      <div class="span6">
+        <h1>This is other test</h1>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum egestas condimentum. Pellentesque ultricies ante id ex facilisis, et congue justo facilisis. Morbi maximus euismod maximus. Donec mattis, sapien quis imperdiet iaculis, felis ipsum semper lectus, eu sagittis dui tellus ut enim. Nunc aliquam lacus in rutrum varius. Maecenas at interdum quam. Sed sagittis ante sem, in iaculis leo molestie eu. Etiam non porta libero. Curabitur neque ipsum, venenatis vitae fringilla eu, gravida ut dui. In et magna id magna pulvinar rhoncus ut pharetra nulla. Vestibulum ut augue eu erat convallis accumsan. Morbi lacinia, enim vitae ultrices vestibulum, augue ipsum rutrum tellus, ac malesuada justo quam eget mi.
+        </p>
+    </div>
+  </div>
+    <div class="row">
+        <div class="span3">
+          <h1>This is other test</h1>
+          orem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum egestas condimentum. Pellentesque ultricies ante id ex facilisis, et congue justo facilisis. Morbi maximus euismod maximus. Donec mattis, sapien quis imperdiet iaculis, felis ipsum semper lectus, eu sagittis dui tellus ut enim. Nunc aliquam lacus in rutrum varius. Maecenas at interdum quam. Sed sagittis ante sem, in iaculis leo molestie eu. Etiam non porta libero. Curabitur neque ipsum, venenatis vitae fringilla eu, gravida ut dui. In et magna id magna pulvinar rhoncus ut pharetra nulla. Vestibulum ut augue eu erat convallis accumsan. Morbi lacinia, enim vitae ultrices vestibulum, augue ipsum rutrum tellus, ac malesuada justo quam eget mi.</div>
+        <div class="span3">
+          <h1>This is other test</h1>
+          orem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum egestas condimentum. Pellentesque ultricies ante id ex facilisis, et congue justo facilisis. Morbi maximus euismod maximus. Donec mattis, sapien quis imperdiet iaculis, felis ipsum semper lectus, eu sagittis dui tellus ut enim. Nunc aliquam lacus in rutrum varius. Maecenas at interdum quam. Sed sagittis ante sem, in iaculis leo molestie eu. Etiam non porta libero. Curabitur neque ipsum, venenatis vitae fringilla eu, gravida ut dui. In et magna id magna pulvinar rhoncus ut pharetra nulla. Vestibulum ut augue eu erat convallis accumsan. Morbi lacinia, enim vitae ultrices vestibulum, augue ipsum rutrum tellus, ac malesuada justo quam eget mi.</div>
+        <div class="span3">
+          <h1>This is other test</h1>
+          orem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum egestas condimentum. Pellentesque ultricies ante id ex facilisis, et congue justo facilisis. Morbi maximus euismod maximus. Donec mattis, sapien quis imperdiet iaculis, felis ipsum semper lectus, eu sagittis dui tellus ut enim. Nunc aliquam lacus in rutrum varius. Maecenas at interdum quam. Sed sagittis ante sem, in iaculis leo molestie eu. Etiam non porta libero. Curabitur neque ipsum, venenatis vitae fringilla eu, gravida ut dui. In et magna id magna pulvinar rhoncus ut pharetra nulla. Vestibulum ut augue eu erat convallis accumsan. Morbi lacinia, enim vitae ultrices vestibulum, augue ipsum rutrum tellus, ac malesuada justo quam eget mi.</div>
+        <div class="span3">
+          <h1>This is other test</h1>
+          orem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum egestas condimentum. Pellentesque ultricies ante id ex facilisis, et congue justo facilisis. Morbi maximus euismod maximus. Donec mattis, sapien quis imperdiet iaculis, felis ipsum semper lectus, eu sagittis dui tellus ut enim. Nunc aliquam lacus in rutrum varius. Maecenas at interdum quam. Sed sagittis ante sem, in iaculis leo molestie eu. Etiam non porta libero. Curabitur neque ipsum, venenatis vitae fringilla eu, gravida ut dui. In et magna id magna pulvinar rhoncus ut pharetra nulla. Vestibulum ut augue eu erat convallis accumsan. Morbi lacinia, enim vitae ultrices vestibulum, augue ipsum rutrum tellus, ac malesuada justo quam eget mi.</div>
+    </div>
+  </div>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+	
+	/$().ready(function(){
+		$("a").tooltip({
+			placement: "left",
+		});
+		$(".mypop").popover({
+			placement:"bottom",
+			title:"This is a title",
+			content:"lorem ipsum dolor sit amet"
+		});
+		/*
+		$("#myModal").modal({
+			backdrop:true,
+			keyboard:true,
+			show: true,
+			remote:"ajax.html"
+		});
+		setTimeout(function(){
+		$("#myModal").modal("show");
+		},2000);
+		setTimeout(function(){
+		$("#myModal").modal("hide");
+		},4000);
+		setTimeout(function(){
+		$("#myModal").modal("toggle");
+		},6000);
+		$("#myModal").on("hide",function(){
+			console.log("Se ha ocultado.");
+		});
+		$("#myModal").on("hidden",function(){
+			console.log("Se ha terminado de ocultar.");
+		});
+		$("#myModal").on("show",function(){
+			console.log("Se ha mostrado.");
+		});
+		$("#myModal").on("shown",function(){
+			console.log("Se ha terminado de mostrar.");
+		});
+	*/
+	});
+	
+  </script>
+<body>
+</body>
+
+</html>
